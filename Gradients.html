@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style type="text/css">
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        #gradient{
+            width:372px;
+            height:300px;
+            /* For browsers that don't support gradient */
+            background-color: blue;
+            /* Introdcuing Linear Gradient */
+            background:linear-gradient(white,blue);
+        }
+        #vertical{
+            width: 250px;
+            height: 500px;
+            position: absolute;
+            top:30px;
+            left:380px;
+            background-color: #FEDCBA;
+            background:linear-gradient(to right,#ABCDEF,#FEDCBA);
+        }
+        #multicolored{
+            width: 372px;
+            height: 200px;
+            background-color: magenta;
+            background: linear-gradient(to top right,violet,indigo,blue,green,yellow,orange,red);
+        }
+        #radialGradient{
+            color:aqua;
+            text-align: center;
+            vertical-align: middle;
+            padding: 15px;
+            border:30px solid black;
+            widows: 540px;
+            height:400px;
+            background-color: black;
+            background: radial-gradient(white,black,white,black,white,black);
+        }
+    </style>
+</head>
+<body>
+    <div id="gradient">
+        <h1>Linear Gradient</h1>
+        <p>
+           This is a linear gradient from top to the bottom ..To apply the linear gradient,we apply CSS3 styling property background
+           And value linear-gradient(#startOffColor,#EndOfColor); </p>
+        <p>
+           In this example to the div we have applied styling as :::
+        </p>
+        <p><strong>
+           background:linear-gradient(white,blue);</strong>
+        </p>
+
+    </div>
+    
+    <div id="vertical">
+        <h1>Vertical Linear Gradient</h1>
+        <p>
+            In this Gradient,the first arguement of the function linear-gradient is not left to default(i.e. to bottom) 
+        </p>
+        <p>
+            And thus,the gradient is applied to right as follows::
+            background:linear-gradient(to right,#ABCDEF,#FEDCBA);
+        </p>
+        <p>
+            The first arguement can have the following values : 
+        </p>
+        <strong>
+            <ul>
+                <li>
+                    to bottom    
+                </li>
+                <li>
+                    to top    
+                </li>
+                <li>
+                    to right 
+                </li>
+                <li>
+                    to left    
+                </li>
+                <li>
+                    to top right     
+                </li>
+                <li>
+                    to bottom right   
+                </li>
+                <li>
+                    to bottom left   
+                </li>
+                <li>
+                    to top left    
+                </li>
+                
+            </ul>
+        </strong>
+    </div>
+    
+    <div id="multicolored">
+        <h1>Multicolored Gradient </h1>
+        <p>
+            This is to show that there is no limit to colors arguement ,we just need to provide the color in order
+        </p>
+        <p>
+            Here we have :::
+        </p>
+        <p>
+            <strong>
+                background: linear-gradient(to top right,violet,indigo,blue,green,yellow,orange,red);
+            </strong>
+        </p>
+    </div>
+
+    <div id="radialGradient">
+        <h1>Radial Gradient</h1>
+        <p>
+            Here we have a radial gradient. This Gradient comes from center to borders of the div
+        </p>
+        <p>
+            In this example :::
+        </p>
+        <p>
+            <strong>
+                background: radial-gradient(white,black,white,black,white,black);
+            </strong>
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style type="text/css">
+        h1{
+            /* Text Shadow values imply offset of shadow to the right, offset of shadow down and blurness of shadow respectively */
+            text-shadow: 2px 4px 4px yellowgreen;
+        }
+        h2{
+            text-shadow: 0 0 4px red;
+        }
+        p{
+            font-size: 150%;
+            text-shadow: 4px 4px 4px rebeccapurple,-3px -5px 4px burlywood;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            box-shadow: 12px 12px 8px magenta;
+            background-color: blueviolet;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            padding:20px;
+            border: 4px solid blue ;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Shadowing presented here .!</h1>
+    <h2>This text will glow.This is done by keeping shadow offsets as 0px and blurring shadow to be 4px. </h2>
+    <p>This text has multiple shadows. Multiple text shadows are separated by ","</p>
+    <div>This div shows box shadow property of CSS3 . Applicable to any box type element</div>
+</body>
+</html>

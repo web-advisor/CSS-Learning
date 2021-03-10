@@ -1,0 +1,552 @@
+<html>
+	<head>
+	
+	
+		<meta name="charset" content="UTF-8">
+		<meta name="description" content="We are trying to imitate the Tecchnology section of the BBC website as a practice for coding using HTML and CSS">
+		<meta name="keywords" content="HTML,CSS,Practice">
+		<meta http-equiv="refresh" content="300">
+		<meta name="author" content="Amar Sinha">		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		
+		<style type="text/css">
+		
+		body{
+			margin:0;
+			padding:0;
+			background-color:#FFFFFF;
+			}
+		.lefty{
+			float:left;
+			}
+		.righty{
+			float:right;
+			}
+		a{
+			text-decoration:none;
+			color:#000000;
+			}
+			
+					
+		
+		#top-bar{ 
+			height:40px;
+			width:1000px;
+			margin:0 auto;
+			background-color:#FFFFFF;
+			}
+		.topbar{
+			float:left;
+			border-left:1px solid #CCCCCC;
+			height:100%;
+			}
+		.topbar-text{
+			font-size:80%;
+			font-family:arial;
+			font-weight:600;
+			padding:12px;
+			position:relative;
+			top:12px;	
+			}
+		#logo{
+			margin:8px;
+			width:90px;
+			float:left;
+			}
+		#sign-in{
+			width:160px;
+			}
+		#bell{
+			width:70px;
+			border:none;
+			}
+		#wiggly-line{
+			height:40px;
+			width:20px;
+			}
+		#bell-icon{
+			height:35px;
+			width:35px;
+			}
+		#search{
+			background-color:#E4E4E4;
+			font-weight:bold;
+			border:none;
+			font-size:14px;
+			margin:5px;
+			}
+		#search-icon{
+			height:27px;
+			width:27px;
+			}
+			
+		#news-bar{
+			width:100%;
+			height:70px;
+			background-color:#BB1919;
+			}
+		#news-logo{
+			position:relative;
+			left:-122.5px;
+			margin:5px;
+			}
+		#location{
+			padding:2px;
+			font-family:verdana;
+			font-size:125%;
+			border:1px solid gray;
+			background-color:#BB1919;
+			float:right;
+			color:#FFFFFF;
+			margin:20px 182.5px 20px 0px;
+			}
+		#location-icon{
+			width:17.5px;
+			height:17.5px;
+			margin:5px 5px 0px 2px;
+			}
+			
+		#link-bar{
+			background-color:#A91717;
+			width:100%;
+			height:35px;
+			}
+		.link-text{
+		    float:left;
+			border-right:0.5px solid #FEDCBA;
+			height:100%;
+			color:#FFFFFF;
+			font-size:80%;
+			font-family:arial;
+			font-weight:600;
+			margin:8px;
+			padding-right:12px;
+			}
+		#first-from-left{
+			margin-left:182.5px;
+			}
+		#fiirst-from-right{
+			border:none;
+			}
+		#selected{
+			text-decoration:underline;
+			}
+			
+		h3{
+			font-family:arial;
+			font-size:120%;
+			font-weight:500;
+			border-bottom:3px solid #A91717;
+			margin-left:182.5px;
+			width:100px;
+			}
+		
+		#main-article{
+			background-color:#FFFFFF;
+			width:700px;
+			margin-left:180px;
+			padding:0px 5px 3px 2.5px;
+			font-family:verdana;
+			border-right:0.5px solid #CCCCCC;
+			}
+		h2{
+			font-size:180%;
+			}
+		#main-article a:hover{
+			color:#1167A8;
+			text-decoration:none;
+			}	
+		#main-article-summary{
+			width:300px;
+			font-size:90%;
+			}
+		#main-article-summary a:hover{
+			color:black;
+			}
+		#blue1 a:hover{
+			color:#1167A8;
+			}
+			
+		#watch-listen{
+			margin-left:20px;
+			float:right; 
+			background-color:#FFFFFF; 
+			position:relative;
+			left:-125px; 
+			}
+		h4{
+			font-weight:normal;
+			font-size:20px;
+			}
+		.aside-image{
+			float:left;
+			}
+		.aside-text{
+			padding:0;
+			margin:0;
+			font-weight:bold;
+			float:right;
+			width:210px;
+			padding-left:2px;
+			padding-right:2px;
+			padding-bottom:10px;
+			}
+		#bluish a:hover{
+			color:#1167A8;
+			}
+		
+		#no-color a:hover{
+			color:black;
+			}
+		.technology{
+			color:#BB1919;
+			border-left:0.5px solid #CCCCCC;
+			padding-left:2px;
+			}
+		#blue2 a:hover{
+			color:#1167A8;
+			}
+			
+			
+			
+			
+		
+		</style>
+		
+		
+		<title>
+		 BBC TECHNOLOGY WEBSITE
+		</title>
+	</head>
+	
+	
+	<body>
+	
+	<div id="top-bar">
+		<a href="http://www.completewebdevelopercourse.com/clone/index_files/bbc-blocks-dark.png" target="_blank">
+			<img src="images/bbc_logo.png" alt="BBC-LOGO" id="logo">	
+		</a>
+		<a href="http://ssl.bbc.co.uk/id/signin?ptrt=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Ftechnology" taget="_blank">
+			<div id="sign-in" class="topbar">
+				<img src="images/signin-logo.jpg" alt="&#128100;" class="lefty">
+				<span class="topbar-text"> Sign in </span>
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/technology#">
+			<div id="bell" class="topbar">
+				<img id="wiggly-line" src="images/wiggly-line.jpg" alt="|" class="lefty">
+				<img id="bell-icon" src="images/bell.png" alt="Tring Tring" class="lefty">
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/" target="_blank">
+			<div class="topbar">
+				<span class="topbar-text"> News </span>
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/sport/" target="_blank">
+			<div class="topbar">
+				<span class="topbar-text"> Sport </span>
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/weather/" target="_blank">
+			<div class="topbar">
+				<span class="topbar-text"> Weather </span>
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/iplayer/" target="_blank">
+			<div class="topbar">
+				<span class="topbar-text"> iPlayer </span>
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/tv/" target="_blank">
+			<div class="topbar">
+				<span class="topbar-text"> TV </span>
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/radio/" target="_blank">
+			<div class="topbar">
+				<span class="topbar-text"> Radio </span>
+			</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/technology#orb-footer" target="_blank">
+			<div class="topbar">
+				<span class="topbar-text"> More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9662;</span>
+			</div>
+		</a>
+		<div id="search" class="lefty">
+			<input id="search" type="search" name="Search bar" placeholder="Search" size="17" title="Search here">
+			<input type="image" id="search-icon" src="images/search-icon.jpg" alt="&#9757;" class="righty">
+		</div>
+				
+	</div>
+				
+	<div id="news-bar">
+		
+		<a href="https://www.bbc.com/news" target="_blank">
+			<img src="Images/news-logo.jpg" alt="NEWS" id="news-logo">
+		</a>
+		
+		<a href="link.html">
+			<div id="location">
+				Find Local News
+				<img src="Images/location.png" alt="&#9967;" id="location-icon">
+			</div>	
+		</a>
+	
+	</div>
+	
+	<div id="link-bar">
+	
+		<a href="http://www.bbc.co.uk/news" target="_blank">
+			<div class="link-text" id="first-from-left">Home</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/uk" target="_blank">
+			<div class="link-text">UK</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/world" target="_blank">
+			<div class="link-text">World</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/business" target="_blank">
+			<div class="link-text">Business</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/politics" target="_blank">
+			<div class="link-text">Politics</div>
+		</a>
+		<a href="http://www.completewebdevelopercourse.com/clone/index_files/index.html" target="_blank">
+			<div class="link-text" id="selected">Tech</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/science_and_environment" target="_blank">
+			<div class="link-text">Science</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/health" target="_blank">
+			<div class="link-text">Health</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/education" target="_blank">
+			<div class="link-text">Education</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/entertainment_and_arts" target="_blank">
+			<div class="link-text">Entertainment & Arts</div>
+		</a>
+		<a href="http://www.bbc.co.uk/news/video_and_audio/video" target="_blank">
+			<div class="link-text">Video & Audio</div>
+		</a>
+		<a href="" target="_blank">
+			<div class="link-text" id="fiirst-from-right">More &nbsp;&nbsp;&nbsp;&#9662;</div>
+		</a>
+		
+	</div>
+
+	<h3>Technology</h3>
+	
+	<div id="main-article" class="lefty">
+		
+		<h2><a href="http://www.bbc.co.uk/news/technology-35350789">Asda bug exposed payment details</a></h2>
+		<p id="main-article-summary" class="lefty"><a href="http://www.bbc.co.uk/news/technology-35350789">
+Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.
+		</a>
+		<br><br>
+
+		2 hours ago  |<span id="blue1"><a href="http://www.completewebdevelopercourse.com/clone/index_files/index.html">	Technology </a>
+		
+		 <br><br>
+		
+		<a href="http://www.bbc.co.uk/news/technology-33409594">
+		Surveillance firm hit in hack attack<br>
+		</a>
+		
+		<a href="http://www.bbc.co.uk/news/technology-29279213">
+		eBay flaw has existed for months
+		</a>
+		</span>
+		</p>
+		
+		
+		<a href="http://www.completewebdevelopercourse.com/clone/index_files/index.html">
+		<img class="lefty" src="Images/asda-logo.jpg" alt="ASDA">
+		</a>
+
+	</div>
+	
+	<div id="watch-listen">
+	
+		<h4>Watch/Listen</h4>
+		
+		<div class="aside-articles" id="bluish">
+			<img src="Images/1.jpg" class="aside-image">
+			<a href="http://www.bbc.co.uk/programmes/p03fyd3z">
+			<p class="aside-text">
+			UK science chief backs blockchains
+			</p>
+			<br>
+			<p>
+			&nbsp;
+			&nbsp;
+			&nbsp;1 hour ago
+			</a>
+			</p>
+		</div>
+            	
+		<div class="aside-articles" id="bluish">
+			<img src="Images/2.jpg" class="aside-image">
+			<a href="http://www.bbc.co.uk/news/technology-35302125">
+			<p class="aside-text">
+				Drone register gives 'accountability'
+			</p>
+			<br>
+			<p>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<span>
+			18 January 2016
+			</span>
+			</a>
+			<a href="http://www.completewebdevelopercourse.com/clone/index_files/index.html">
+			<span class="technology">
+			Technology
+			</span>
+			<a>
+			</p>
+			
+		</div>
+		
+		<div class="aside-articles" id="bluish">
+			<img src="Images/3.jpg" class="aside-image">
+			<a href="http://www.bbc.co.uk/news/science-environment-35340734">
+			<p class="aside-text">
+				SpaceX rocket explodes during landing
+			</p>
+			<br>
+			<p>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<span>
+			18 January 2016
+			</span>
+			</a>
+			<a href="http://www.bbc.co.uk/news/science-environment-35340734">
+			<span class="technology">
+			Science & Environment
+			</span>
+			<a>
+			</p>
+			
+		</div>
+		
+		<div class="aside-articles" id="bluish">
+			<img src="Images/4.jpg" class="aside-image">
+			<a href="http://www.bbc.co.uk/news/technology-35328636">
+			<p class="aside-text">
+				What is a VPN service?
+			</p>
+			<br>
+			<p>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<span>
+			18 January 2016
+			</span>
+			</a>
+			<a href="http://www.completewebdevelopercourse.com/clone/index_files/index.html">
+			<span class="technology">
+			Technology
+			</span>
+			<a>
+			</p>
+			
+		</div>
+		
+		<div class="aside-articles" id="bluish">
+			<img src="Images/5.jpg" class="aside-image">
+			<a href="http://www.bbc.co.uk/news/technology-35302533">
+			<p class="aside-text">
+				Charge your phone with a hand crank
+			</p>
+			<br>
+			<p>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<span>
+			18 January 2016
+			</span>
+			</a>
+			<a href="http://www.completewebdevelopercourse.com/clone/index_files/index.html">
+			<span class="technology">
+			Technology
+			</span>
+			<a>
+			</p>
+			
+		</div>
+				
+		<div class="aside-articles" id="bluish">
+			<img src="Images/6.jpg" class="aside-image">
+			<a href="http://www.bbc.co.uk/news/technology-35222276">
+			<p class="aside-text">
+				Drones break Guinness World Record
+			</p>
+			<br>
+			<p>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<span>
+			18 January 2016
+			</span>
+			</a>
+			<a href="http://www.completewebdevelopercourse.com/clone/index_files/index.html">
+			<span class="technology">
+			Technology
+			</span>
+			<a>
+			</p>
+			
+		</div>
+		
+		
+		
+	
+	
+	
+	
+	</div>
+	
+	</body>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

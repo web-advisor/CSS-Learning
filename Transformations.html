@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style type="text/css">
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            margin:3px;
+            float: left;
+        }
+        #easeInOut{
+            /*  Without transition type and time mentioned the element just jumps over to the new position with a blink of an eye..   Time in seconds imply to the time in which the transition is going to be performed ; While ease-in-out implies how is it going to speed up slow-fast-slow */
+            transition: 1.5s ease-in-out;
+            background-color: brown;
+        }
+        #easeInOut:hover{
+            /* translate(x,y) moves the element by x,y distance */
+            transform: translate(50px,50px);            
+        }
+        #linear{
+            transition: 1s linear;
+            background-color: darkkhaki;
+        }
+        #linear:hover{
+            transform:translate(40px,40px);
+        }
+        #easeIn{
+            transition: 0.5s ease-in;
+            background-color: aquamarine;
+        }
+        #easeIn:hover{
+            transform: translate(60px,20px);
+        }
+        #stepStart{
+            transition: 2s step-start;
+            background-color:lawngreen;
+        }
+        #stepStart:hover{
+            transform: translate(30px,30px);
+        }
+        #cubic{
+            transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color:darkorange;
+        }
+        #cubic:hover{
+            transform: translate(60px,40px);
+        }
+
+
+        #rotate{
+            transition: 2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            background-color:royalblue;
+        }
+        #rotate:hover{
+            /* rotate() requires the degree by which we want to rotate the element by as arguement */
+            transform: rotate(210deg);
+        }
+
+
+        #scale{
+            transition: 2.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+            background-color:fuchsia;
+        }
+        #scale:hover{
+            /* scale(x,y) requires the factor by which we want to magnify the x and y axis of the element as arguements. */
+            transform:scale(1.5,2.5);
+        }
+        
+
+        #skew{
+            transition: 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            background-color:gold;
+        }
+        #skew:hover{
+            /* skew(xdeg,ydeg) requires the factor by which we want to twist the element along the diagonal as arguements.  */
+            transform:skew(20deg,30deg);
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="easeInOut" class="box">
+        <br>This is CSS3 translate transition in action. 
+    </div>
+    <div id="linear" class="box">
+        <br>This box undergoes Linear Transition.
+    </div>
+    <div id="easeIn" class="box">
+        <br>This box undergoes ease-in transition.
+    </div>
+    <div id="stepStart" class="box">
+        <br>This box undergoes step-start transition.
+    </div>
+    <div id="cubic" class="box">
+        <br>This box undergoes cubic transition.
+    </div>
+
+
+    <div id="rotate" class="box">
+        <br>This box undergoes CSS3 rotate transition.
+    </div>
+
+
+    <div id="scale" class="box">
+        <br>This box undergoes CSS3 scale transition.
+    </div>
+
+
+    <div id="skew" class="box">
+        <br>This box undergoes CSS3 skew transition.
+    </div>
+
+
+</body>
+</html>
